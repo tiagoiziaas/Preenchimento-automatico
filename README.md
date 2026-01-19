@@ -54,3 +54,50 @@ O sistema captura o elemento automaticamente e solicita a associação com a col
 
 ## 🧩 Estrutura do Projeto
 
+preenchimento_app/
+├── app.py # Ponto de entrada
+├── ui.py # Interface gráfica (Tkinter)
+├── mapper.py # Mapeamento visual dos elementos
+├── runner.py # Execução da automação
+├── datasource.py # Leitura de CSV e Excel
+├── selectors.py # Geração de seletores CSS
+├── injected_js.py # JavaScript injetado no navegador
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### 🐍 Python
+Linguagem principal do projeto, escolhida pela robustez e facilidade de automação.
+
+### 🌐 Playwright
+Automação do navegador:
+- Preenchimento de campos
+- Cliques automáticos
+- Injeção de JavaScript
+- Captura de eventos do usuário
+
+### 🖥️ Tkinter
+Interface gráfica nativa do Python, utilizada para controle da automação.
+
+### 📊 openpyxl
+Leitura de planilhas Excel (`.xlsx`) sem dependências pesadas.
+
+### 📁 csv (biblioteca padrão)
+Leitura de arquivos CSV.
+
+### 🧠 JavaScript
+Script injetado na página para identificar elementos clicados e gerar seletores confiáveis.
+
+### 📦 PyInstaller
+Empacotamento da aplicação em um executável (`.exe`).
+
+---
+
+## ⚙️ Instalação (Ambiente de Desenvolvimento)
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+pip install playwright openpyxl pyinstaller
+python -m playwright install chromium
