@@ -1,9 +1,5 @@
-@"
-venv/
-__pycache__/
-*.pyc
+node_modules/
+.env
+.env.local
 dist/
 build/
-*.spec
-.env
-"@ | Out-File -Encoding utf8 .gitignore
